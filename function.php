@@ -2,7 +2,7 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'lazora');
+$db = mysqli_connect('localhost', 'root', '', 'pavimart');
 
 // variable declaration
 $username = "";
@@ -104,7 +104,7 @@ function isLoggedIn()
 if (isset($_GET['logout'])) {
 	session_destroy();
 	unset($_SESSION['user']);
-	header("location: login.php");
+	header("location: loginPage.php");
 }
 if (isset($_POST['login_btn'])) {
 	login();
@@ -145,7 +145,7 @@ function login(){
 				$_SESSION['user'] = $logged_in_user;
 				$_SESSION['success']  = "You are now logged in";
 
-				header('location: index.php');
+				header('location: Homepage.php');
 			}
 		}else {
 			array_push($errors, "Wrong username/password combination");

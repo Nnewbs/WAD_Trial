@@ -41,7 +41,7 @@
 
 	<!-- nav bar -->
 	<div id="navbar" style="padding: 35px 10px;">
-		<a href="index.php" id="logo">LAZORA</a>
+		<a href="index.php" id="logo">PAVI MART</a>
 	<div id="navbar-right">
 		<a href="about.php">About</a>
 	</div>
@@ -49,7 +49,7 @@
 
 <!--Log In Form-->
 <div class="containerreg">
-<form class="modal-content animate" method="post" action="login.php">
+<form class="modal-content animate" method="post" action="loginPage.php">
 	<div class="containerreg">
 		<div class="title">Log In</div>
 			<div class="form">

@@ -90,23 +90,15 @@
 <body style="background-image: url('images/background.jpg');">
   <!-- nav bar -->
   <div id="navbar" style="padding: 35px 10px;">
-  <a href="index.php" id="logo">LAZORA</a>
+  <a href="index.php" id="logo">  PAVI MART</a>
   <div id="navbar-right">
     <a href="#about">Products</a>
     <a href="about.php">About</a>
-    <div class="dropdown">
-    <button class="dropbtn">My Account
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="loginPage.php">Login</a>
-    </div>
-  </div>
   </div>
 </div>
 
 
-<form method='post' action='register.php'>
+<form method='post' action='registrationPage.php'>
 
   <?php
     // Display Error message
@@ -156,7 +148,7 @@
     <br><input type="submit" name="btnsignup" class="btn btn-default" value="Create my account" >
     </form>
 
-    <br><p> By continueing you agree to our Terms & Conditions and Privacy Policy</p>
+    <br><p> By continuing you agree to our Terms & Conditions and Privacy Policy</p>
     <p>Already have an account? <a href="loginPage.php" class="link"> Log in</a></p>
 
   </div>
