@@ -1,4 +1,4 @@
-   /*Register Page Style*/
+   /*Forms Style*/
    *{
     margin: 0;
     padding: 0;
@@ -96,14 +96,14 @@
     text-align: center;
   }
 
-/* Style for the "Log in" link */
-.login-link {
+/* Style for the link */
+.link {
     font-weight: bold; 
     color: #E1D9D1;    
     text-decoration: none; 
 }
   
-.login-link:hover {
+.link:hover {
     text-decoration: underline; 
     color: #E1D9D1; 
 }

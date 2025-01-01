@@ -99,7 +99,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="login.php">Login</a>
+      <a href="loginPage.php">Login</a>
     </div>
   </div>
   </div>
@@ -157,7 +157,7 @@
     </form>
 
     <br><p> By continueing you agree to our Terms & Conditions and Privacy Policy</p>
-    <p>Already have an account? <a href="loginPage.php" class="login-link"> Log in</a></p>
+    <p>Already have an account? <a href="loginPage.php" class="link"> Log in</a></p>
 
   </div>
 </div>
