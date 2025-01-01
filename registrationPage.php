@@ -83,7 +83,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href=" CSS/boxForm.css?v=<?php echo time(); ?>">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -135,7 +135,7 @@
   <!-- Form Container -->
   <div style="margin-top:150px;padding:15px 15px 100px;font-size:30px">
   <div class="containerreg">
-    <div class="title">Registration</div>
+    <div class="title">SIGN UP</div>
       <div class="form">
         <div class="textbox">
           <label for="uname">Username</label>
@@ -153,13 +153,17 @@
           <label for="pwd">Confirm Password</label>
           <input type="password" class="input" name="confirmpassword" id="confirmpassword" onkeyup=' ' required="required">
         </div>
-    <br><input type="submit" name="btnsignup" class="btn btn-default" value="Register" >
-      </form>
+    <br><input type="submit" name="btnsignup" class="btn btn-default" value="Create my account" >
+    </form>
+
+    <br><p> By continueing you agree to our Terms & Conditions and Privacy Policy</p>
+    <p>Already have an account? <a href="loginPage.php" class="login-link"> Log in</a></p>
+
   </div>
 </div>
 
 
-  <!-- Script Section -->
+<!-- Script Section -->
 <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
