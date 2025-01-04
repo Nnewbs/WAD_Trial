@@ -19,7 +19,7 @@
 			if($row['level'] == "customer"){
 				echo "<script> window.location='homePage.php?id=".$id."'</script>";
 			} else{
-				echo "<script> window.location='adminhome.php?id=".$id."'</script>";
+				echo "<script> window.location='adminHome.php?id=".$id."'</script>";
 			}
 		} else {
 			echo "<script>alert('You have entered a wrong email or password!'); window.location='loginPage.php';</script>";
