@@ -90,7 +90,7 @@
 
     <div id="navbar-right">
         <a href="shopPage.php">Cart</a>
-        <a href="account.php">Account</a>
+        <a href="accD.php">Account</a>
     </div>
 </div>
 <!-- End Nav bar-->
