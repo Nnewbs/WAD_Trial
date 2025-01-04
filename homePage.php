@@ -62,10 +62,10 @@
     padding: 10px 20px;
     font-size: 18px;
     margin: 10px;
-    border: none;
+    border: 1px solid;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #000000;
+    background-color: transparent;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s;
