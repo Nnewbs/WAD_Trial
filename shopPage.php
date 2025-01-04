@@ -139,7 +139,7 @@
 
 
           <div class="col-md-3 text-center mt-5">
-            <img src="images/<?php echo $row['image']?>" alt="">
+            <img src="images/<?php echo $row['filename']?>" alt="">
             <h6 style="color: #ffff; overflow: hidden;"><?php echo $row['name']?></h6>
             <p style="color: #ffff;">Price: <?php echo $row['price']?></p>
             <div class="form-group">

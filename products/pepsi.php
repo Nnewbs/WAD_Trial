@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
    <head>
-	   <title>Tie-detail sun hat</title>
+	   <title>Pepsi</title>
 	   <meta charset="utf-8">
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
 	   <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
@@ -43,22 +43,22 @@
     <tr>
         <!-- Product Image Column -->
         <td style="width: 50%; text-align: center; vertical-align: top; padding: 20px;">
-            <img class="product" src="images/7.jpg" alt="Tie-detail sun hat" style="max-width: 100%; height: auto;">
+            <img class="product" src="images/pepsi.jpg" alt="Pepsi" style="max-width: 100%; height: auto;">
         </td>
         <!-- Product Details Column -->
         <td style="width: 50%; vertical-align: top; padding: 20px;">
             <form>
-            <span style="font-size: 18px; color: gray;">Accessories / Hat / Bucket</span>
-            <h1 style="font-size: 28px; margin: 10px 0;">Tie-detail Sun Hat</h1>
-            <p style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #444;">RM39.95</p>
+            <span style="font-size: 18px; color: gray;">Drink / Soda</span>
+            <h1 style="font-size: 28px; margin: 10px 0;">Pepsi</h1>
+            <p style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #444;">RM3.00</p>
             <br>
-            <h3 style="font-size: 22px; margin-bottom: 10px;">Product Details</h3>
+            <h3 style="font-size: 22px; margin-bottom: 10px;">Ingredients Details</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;">
-            - Solid tone towel fabric bucket hat<br>
-            - Cotton<br>
-            - Slip-on<br>
-            - Inner lining<br>
-            - Wide brim
+            - 41 grams of carbohydrates<br>
+            - 30 mg of sodium<br>
+            - 38 mg of caffiene<br>
+            - 150 calories<br>
+            - 0 gram of protien
             </p>
             </form>
 

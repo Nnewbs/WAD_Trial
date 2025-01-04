@@ -111,7 +111,9 @@
       <br>
       <main class="grid">
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <a href="chipsmore.php">
+        <img height="500px"src="images/chipsmore.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
             <button href="">Snack</button>
