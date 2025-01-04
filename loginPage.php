@@ -17,12 +17,12 @@
 
 			//Check the level whether it is a customer or an admin.
 			if($row['level'] == "customer"){
-				echo "<script> window.location='userhome.php?id=".$id."'</script>";
+				echo "<script> window.location='homePage.php?id=".$id."'</script>";
 			} else{
 				echo "<script> window.location='adminhome.php?id=".$id."'</script>";
 			}
 		} else {
-			echo "<script>alert('You have entered a wrong email or password!'); window.location='login.php';</script>";
+			echo "<script>alert('You have entered a wrong email or password!'); window.location='loginPage.php';</script>";
 		}
 	}
 ?>
@@ -35,17 +35,7 @@
 <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS/boxForm.css?v=<?php echo time(); ?>">
 
-
-
 <body style="background-image: url('images/background.jpg');">
-
-	<!-- nav bar -->
-	<div id="navbar" style="padding: 35px 10px;">
-		<a href="index.php" id="logo">PAVI MART</a>
-	<div id="navbar-right">
-		<a href="about.php">About</a>
-	</div>
-	</div>
 
 <!--Log In Form-->
 <div class="containerreg">

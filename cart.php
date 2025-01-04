@@ -2,17 +2,13 @@
 session_start();
 
 
-
 if(isset($_POST['cart_id'])){
-
-            if($_POST['action'] == 'add'){
-
-                if(isset($_SESSION['cart'])){
-                    $isalreadyExist = 0;
-                    foreach($_SESSION['cart'] as $key => $value){
-
-                        if($_SESSION['cart'][$key]['p_id'] == $_POST['cart_id']){
-                            $isalreadyExist++;
+    if($_POST['action'] == 'add'){
+        if(isset($_SESSION['cart'])){
+            $isalreadyExist = 0;
+            foreach($_SESSION['cart'] as $key => $value){
+                if($_SESSION['cart'][$key]['p_id'] == $_POST['cart_id']){
+                    $isalreadyExist++;
                             $_SESSION['cart'][$key]['p_quantity'] =  $_SESSION['cart'][$key]['p_quantity'] + $_POST['cart_quantity'];
                         }
                     }
@@ -67,7 +63,7 @@ if(!empty($_SESSION['cart'])){
     }
     $outputTable .= "</table>";
     $outputTable .= "<div class='text-center'><b>Total: ".$total."</b></div>";
-	$outputTable .= "<div class='text-center'><button class='btn-danger'><a href='ty.php'>Purchase</a></Button></div>";
+	$outputTable .= "<div class='text-center'><button class='btn-danger'><a href='purchasePage.php'>Purchase</a></Button></div>";
 	}else{
 	$outputTable = '';
     $total = 0;

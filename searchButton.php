@@ -1,8 +1,8 @@
 <?php
     include("dbconn.php");
 
-    if($_POST['search'] == "shirt man" || $_POST['search'] == "slim man" || $_POST['search'] == "Fit Shirt" || $_POST['search'] == "slim fit shirt" || $_POST['search'] == "SLIM FIT SHIRT" || $_POST['search'] == "man shirt" || $_POST['search'] == "MAN SHIRT"){
-        echo "<script> window.location='man1.php?id=".$id."'</script>";
+    if($_POST['search'] == "tie" || $_POST['search'] == "slim man" || $_POST['search'] == "Fit Shirt" || $_POST['search'] == "slim fit shirt" || $_POST['search'] == "SLIM FIT SHIRT" || $_POST['search'] == "man shirt" || $_POST['search'] == "MAN SHIRT"){
+        echo "<script> window.location='tie.php?id=".$id."'</script>";
     }
     else if($_POST['search'] == "hoodie man" || $_POST['search'] == "regular hoodie" || $_POST['search'] == "regular fit hoodie" || $_POST['search'] == "Regular Fit Hoodie" || $_POST['search'] == "REGULAR FIT HOODIE"){
         echo "<script> window.location='man2.php?id=".$id."'</script>";
@@ -26,6 +26,6 @@
         echo "<script> window.location='acc2.php?id=".$id."'</script>";
     }
     else {
-        echo "<script>alert('The item not available in our store at the moment!'); window.location='productview.php';</script>";
+        echo "<script>alert('The item not available in our store at the moment!'); window.location='shopPage.php';</script>";
     }
 ?>
