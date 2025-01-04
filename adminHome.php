@@ -1,77 +1,126 @@
 <?php
-    include("dbconn.php"); //$conn
+// Include database connection
+include("dbconn.php");
+session_start();
 ?>
-<?php
-    $id = $_GET['id'];
 
-    $sql = "SELECT * FROM users WHERE email = '$id'";
-    $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
-    $row = $query -> fetch_assoc();
-?>
-<html>
-<title>Admin's Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
+    <style>
+        body {
+            display: flex;
+        }
 
-<body style="background-image: url('images/background.jpg');">
-		<!-- Header -->
-<div id="navbar" style="padding: 35px 10px;">
-  <a href="userhome.php?id=<?php echo $row['email']; ?>" id="logo">LAZORA</a>
-  <div id="navbar-right">
-      <a href="logout.php">Logout</a>
+        .sidebar {
+            width: 250px;
+            background: #343a40;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background: #495057;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+
+        .chart-container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h3 class="text-center">Admin Panel</h3>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#menu-management">Menu Management</a>
+        <a href="#order-management">Order Management</a>
+        <a href="#transaction-summary">Transaction Summary</a>
+        <a href="#registered-members">Registered Members</a>
+        <a href="index.php">Logout</a>
     </div>
-  </div>
-  </div>
-</div>
-<!-- End Header -->
-<div style="margin-top:190px;padding:15px 15px;font-size:30px">
 
-		<center>
-		<?php
-		$sql = "SELECT id, username, email, level FROM users";
-		$result = $dbconn->query($sql);
-		?>
+    <div class="content">
+        <!-- Dashboard -->
+        <div id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <h5>Total Orders</h5>
+                            <h3 id="total-orders">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <h5>Total Revenue</h5>
+                            <h3 id="total-revenue">$0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body">
+                            <h5>User Registrations</h5>
+                            <h3 id="user-registrations">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart.js example
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        const salesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April'],
+                datasets: [{
+                    label: 'Sales Value',
+                    data: [1200, 1900, 3000, 5000],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                }],
+            },
+        });
 
-		<table class="tuser" border="1px solid black">
-			<caption><h2 style="color: white" align="center">Admin's View</h2></caption>
-		<tr>
-		<th>ID</th>
-		<th>Username</th>
-		<th>Email</th>
-		<th>Level</th>
-		<th>Delete User</th>
-		</tr>
+        // Populate data dynamically (mock example for now)
+        document.getElementById('total-orders').innerText = 150;
+        document.getElementById('total-revenue').innerText = '$4500';
+        document.getElementById('user-registrations').innerText = 25;
+    </script>
+</body>
 
-		<?php
-		while($row = mysqli_fetch_array($result))
-		{
-		?>
-		 <tr>
-		 <td><?php echo $row['id']; ?></td>
-		 <td><?php echo $row['username']; ?></td>
-		 <td><?php echo $row['email']; ?></td>
-		 <td><?php echo $row['level']; ?></td>
-		 <td><a href="deleteuser.php?id=<?php echo $row['id']; ?>">Delete</a>
-		 </tr>
-		 <?php
-		}
-		?>
-		</table>
-		</center>
-	</div>
-
-	<style>
-		table{
-			background-color: white;
-  			box-shadow: 5px 10px #888888;
-			width: 80%;
-		}
-
-
-	</style>
-
-	</body>
 </html>

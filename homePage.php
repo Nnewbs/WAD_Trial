@@ -78,6 +78,23 @@
 </head>
 <body>
 
+<!-- Nav bar --> 
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="homePage.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="homePage.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="about.php">About Us</a>
+    </div>
+
+    <div id="navbar-right">
+        <a href="shopPage.php">Cart</a>
+        <a href="account.php">Account</a>
+    </div>
+</div>
+<!-- End Nav bar-->
+
 <!-- Home Section -->
 <div class="home">
   <img src="images/homepage.jpeg" alt="Homepage">

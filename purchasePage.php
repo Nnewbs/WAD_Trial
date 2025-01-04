@@ -20,17 +20,23 @@
 </head>
 
 <body>
-  <!-- nav bar -->
-  <div id="navbar" style="padding: 35px 10px;">
-    <a href="userhome.php?id=<?php echo $row['email']; ?>" id="logo">LAZORA</a>
-    <div id="navbar-right">
-      <a href="product.php?id=<?php echo $row['email']; ?>">Products</a>
-      <a href="loginabout.php?id=<?php echo $row['email']; ?>">About</a>
-      <a href="logout.php">logout</a>
+<!-- Nav bar --> 
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="homePage.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="homePage.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="about.php">About Us</a>
     </div>
-  </div>
 
-<!-- End Header -->
+    <div id="navbar-right">
+        <a href="shopPage.php">Cart</a>
+        <a href="account.php">Account</a>
+    </div>
+</div>
+<!-- End Nav bar-->
+
 <div class="tymessage" style="text-align: center; margin-top: 20%;">
   <h3 style="color: #ffff;">Thank you for purchasing!</h3>
 </div>

@@ -84,19 +84,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
 <link rel="stylesheet" href=" CSS/boxForm.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href=" CSS/style.css?v=<?php echo time(); ?>">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <body style="background-image: url('images/background.jpg');">
-  <!-- nav bar -->
-  <div id="navbar" style="padding: 35px 10px;">
-  <a href="index.php" id="logo">  PAVI MART</a>
-  <div id="navbar-right">
-    <a href="#about">Products</a>
-    <a href="about.php">About</a>
-  </div>
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="index.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="index.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="about.php">About Us</a>
+    </div>
 </div>
-
 
 <form method='post' action='registrationPage.php'>
 
