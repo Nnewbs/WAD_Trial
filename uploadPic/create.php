@@ -1,7 +1,3 @@
-<?php
-include_once("dbconn.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +11,7 @@ include_once("dbconn.php");
     <div class="container mt-5">
         <h2>Upload Images</h2>
         <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input class="form-control mt-4" type="text" name="name" id="" placeholder="Enter Name:">
+            <input class="form-control mt-4" type="text" name="fullname" id="" placeholder="Enter Name:">
             <input class="form-control mt-4" type="file" name="image" id="">
             <input class="btn btn-primary mt-4" type="submit" value="Upload" name="submit">
         </form>

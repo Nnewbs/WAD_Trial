@@ -1,7 +1,3 @@
-<?php
-include_once("dbconn.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +12,13 @@ include_once("dbconn.php");
     <?php
     include_once("dbconn.php");
     $query = "SELECT * FROM items";
-    $result = mysqli_query($conn, $query);
+    $result = mysqli_query($dbconn, $query);
     echo "<a class='btn btn-info mb-4' href='create.php'>Add New</a>";
     if ($result->num_rows>0) {
         while($row = mysqli_fetch_array($result)){
             $name = $row["name"];
             $fileName = $row["filename"];
-            $imageUrl = "uploads/".$fileName;
+            $imageUrl = "images/".$fileName;
             echo "<div class='profile mt-4'>";
             echo "<img src='$imageUrl'>";
             echo "<h3>$name</h3>";
