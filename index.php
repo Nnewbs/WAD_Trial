@@ -14,8 +14,8 @@ include_once("dbconn.php");
 <body>
     <div class="container mt-5">
     <?php
-    include_once("connect.php");
-    $query = "SELECT * FROM images";
+    include_once("dbconn.php");
+    $query = "SELECT * FROM items";
     $result = mysqli_query($conn, $query);
     echo "<a class='btn btn-info mb-4' href='create.php'>Add New</a>";
     if ($result->num_rows>0) {

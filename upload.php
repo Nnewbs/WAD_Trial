@@ -9,7 +9,7 @@ if ($_POST["submit"]) {
     $targetPath = "uploads/".$fileName;
     if(in_array($ext, $allowedTypes)){
         if(move_uploaded_file($tempName, $targetPath)){
-            $query = "INSERT INTO images (name, filename) VALUES ('$fullName', '$fileName')";
+            $query = "INSERT INTO items (name, filename) VALUES ('$fullName', '$fileName')";
             if(mysqli_query($conn, $query)){
                 header("Location: index.php");
             }else{
