@@ -67,7 +67,7 @@ $(function(){
     <tr>
         <!-- Product Image Column -->
         <td style="width: 50%; text-align: center; vertical-align: top; padding: 20px;">
-            <img class="product" src="images/chipsmore.jpg" alt="Mee Sedap" style="max-width: 100%; height: auto;">
+            <img class="product" src="images/meesedap.jpg" alt="Mee Sedap" style="max-width: 100%; height: auto;">
         </td>
         <!-- Product Details Column -->
         <td style="width: 50%; vertical-align: top; padding: 20px;">
