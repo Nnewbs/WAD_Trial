@@ -1,5 +1,6 @@
 <?php
 include("dbconn.php");
+session_start();
 
 $id = $_GET['id'];  // Fetch the item ID from the URL
 
