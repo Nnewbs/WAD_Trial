@@ -48,6 +48,19 @@
 	</head>
 
 <body>
+
+<!-- Nav bar --> 
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="index.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="index.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="aboutUs.php">About Us</a>
+    </div>
+</div>
+<!-- End Nav bar-->
+ 
 <!-- Product Details -->
 <div class="row" style="margin-top: 150px; margin-bottom: 20px; display: flex; justify-content: center;">
     <table style="width: 80%; border-collapse: collapse;">

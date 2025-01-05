@@ -48,6 +48,29 @@
 	</head>
 
 <body>
+
+<!-- Nav bar --> 
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="index.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="index.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="aboutUs.php">About Us</a>
+    </div>
+</div>
+<!-- End Nav bar-->
+ <!-- Nav bar --> 
+<div id="navbar" style="padding: 35px 10px;">
+    <a href="index.php" id="logo">PAVI MART</a>
+    <div id="navbar-middle">
+        <a href="index.php">Home</a>
+        <a href="shopPage.php">Shop</a>
+        <a href="promotionPage.php">Promotion</a>
+        <a href="aboutUs.php">About Us</a>
+    </div>
+</div>
+<!-- End Nav bar-->
 <!-- Product Details -->
 <div class="row" style="margin-top: 150px; margin-bottom: 20px; display: flex; justify-content: center;">
     <table style="width: 80%; border-collapse: collapse;">
@@ -79,6 +102,42 @@
     </table>
 </div>
 
+<!--Footer -->
+<footer class="footer">
+    <div class="container-footer">
+       <div class="row">
+           <div class="footer-col">
+               <h4>Company</h4>
+               <ul>
+                   <li><a href="aboutUs.php">about us</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Get Help</h4>
+               <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">returns</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Shop</h4>
+               <ul>
+                   <li><a href="promotionPage.php">Promotion</a></li>
+                   <li><a href="shopPage.php">Shop</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+       </div>
+    </div>
+ </footer>
+ <!--End Footer-->
 
 </body>
 </html>
