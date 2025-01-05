@@ -15,7 +15,7 @@
 	   <title>Mister Potato</title>
 	   <meta charset="utf-8">
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+	   <link rel="stylesheet" href="CSS/style.css?v=<?php echo time(); ?>">
 	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	   <script type="text/javascript" src="JS/script.js"></script>
