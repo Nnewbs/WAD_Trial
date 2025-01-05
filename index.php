@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	include("dbconn.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +54,7 @@ $(function(){
       <p class="middle"> Categories </p>
       <main class="grid">
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <img height="500px"src="images/mister.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
             <button href="">Snack</button>
@@ -58,7 +62,7 @@ $(function(){
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <img height="500px"src="images/waffle.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
             <button href="product.php">Fresh Food</button>
@@ -66,10 +70,10 @@ $(function(){
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+          <img height="500px"src="images/cola.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button>Drinks</button>
           </div>
         </article>
       </main>
@@ -81,7 +85,7 @@ $(function(){
     <p class="middle"> Promotion </p>
     <main class="grid">
       <article>
-      <img height="500px"src="images/men1.jpg" alt="" width="100%">
+      <img height="500px"src="images/oden.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
           <button href="">Oden Combo Set</button>
@@ -89,7 +93,7 @@ $(function(){
       </article>
 
       <article>
-      <img height="500px"src="images/women1.jpg" alt="" width="100%">
+      <img height="500px"src="images/chipsmore.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
           <button href="product.php">Breakfast Pack</button>
@@ -97,7 +101,7 @@ $(function(){
       </article>
 
       <article>
-        <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <img height="500px"src="images/mister.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
           <button>Snack Bundle Deals</button>
@@ -112,7 +116,7 @@ $(function(){
     <p class="middle"> Student's Favourite </p>
     <main class="grid">
       <article>
-      <img height="500px"src="images/men1.jpg" alt="" width="100%">
+      <img height="500px"src="images/oden.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
           <button href="">Oden's Cup</button>
@@ -120,15 +124,15 @@ $(function(){
       </article>
 
       <article>
-      <img height="500px"src="images/women1.jpg" alt="" width="100%">
+      <img height="500px"src="images/pepsi.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button href="product.php">Mee Maggi Curry 70g</button>
+          <button href="product.php">Pepsi</button>
         </div>
       </article>
 
       <article>
-        <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <img height="500px"src="images/meesedap.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
           <button>Mee Sedap Original Cup 70g</button>

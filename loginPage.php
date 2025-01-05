@@ -22,7 +22,7 @@
 				echo "<script> window.location='adminHome.php?id=".$id."'</script>";
 			}
 		} else {
-			echo "<script>alert('You have entered a wrong email or password!'); window.location='loginPage.php';</script>";
+			echo "<script>alert('You have entered a wrong email or password!'); window.location='index.php';</script>";
 		}
 	}
 ?>
