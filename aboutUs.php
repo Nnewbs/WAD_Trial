@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <style>
         body {
@@ -75,20 +76,17 @@
 
 <body>
 
-<!-- Navbar -->
-<div id="navbar" style="padding: 35px 10px;">
-    <a href="homePage.php" id="logo">PAVI MART</a>
-    <div id="navbar-middle">
-        <a href="homePage.php">Home</a>
-        <a href="shopPage.php">Shop</a>
-        <a href="promotionPage.php">Promotion</a>
-        <a href="about.php" class="active">About Us</a>
-    </div>
-    <div id="navbar-right">
-        <a href="shopPage.php">Cart</a>
-        <a href="accountDetails.php">Account</a>
-    </div>
+<!--Top Navigation Bar-->
+<div id="navbar-frame">
+
 </div>
+
+<script>
+$(function(){
+  $("#navbar-frame").load("navbar2.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 <!-- About Section -->
 <div class="about-section">
