@@ -126,112 +126,91 @@
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Chipsmore</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="cola.php">
+        <img height="500px"src="images/cola.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Cola</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="heaven2.php">
+        <img height="500px"src="images/h&e2.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Heaven & Earth</button>
           </div>
         </article>
 
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <a href="meesedap.php">
+        <img height="500px"src="images/meesedap.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Mee Sedap</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="mister.php">
+        <img height="500px"src="images/mister.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Mister Potato</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="munchys.php">
+        <img height="500px"src="images/munchys.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Munchys</button>
           </div>
         </article>
 
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <a href="oden.php">
+        <img height="500px"src="images/oden.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Oden</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="pepsi.php">
+        <img height="500px"src="images/pepsi.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Pepsi</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="Waffle.php">
+        <img height="500px"src="images/waffle.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Waffle</button>
           </div>
         </article>
       </main>
   </div>
-
-<!--Footer -->
-<footer class="footer">
-    <div class="container-footer">
-       <div class="row">
-           <div class="footer-col">
-               <h4>Company</h4>
-               <ul>
-                   <li><a href="aboutUs.php">about us</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Get Help</h4>
-               <ul>
-                   <li><a href="#">FAQ</a></li>
-                   <li><a href="#">returns</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Shop</h4>
-               <ul>
-                   <li><a href="promotionPage.php">Promotion</a></li>
-                   <li><a href="shopPage.php">Shop</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>follow us</h4>
-               <div class="social-links">
-                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-               </div>
-           </div>
-       </div>
-    </div>
- </footer>
- <!--End Footer-->
 
 <!-- Script Section -->
 <script>
