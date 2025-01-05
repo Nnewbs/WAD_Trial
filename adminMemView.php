@@ -54,34 +54,60 @@ session_start();
 <body>
     <div class="sidebar">
         <h3 class="text-center">Admin Panel</h3>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#menu-management">Menu Management</a>
-        <a href="#order-management">Order Management</a>
-        <a href="#transaction-summary">Transaction Summary</a>
-        <a href="#registered-members">Registered Members</a>
+        <a href="adminHome.php">Dashboard</a>
+        <a href="adminMenuMan.php">Menu Management</a>
+        <a href="adminOrderMan.php">Order Management</a>
+        <a href="adminSummary.php">Transaction Summary</a>
+        <a href="adminMemView.php">Registered Members</a>
         <a href="logout.php">Logout</a>
     </div>
 
     <div class="content">
-        <!-- Order Management -->
-        <div id="order-management" class="mt-5">
-            <h2>Order Management</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Order Number</th>
-                        <th>Customer Name</th>
-                        <th>Total Amount</th>
-                        <th>Order Date</th>
-                    </tr>
-                </thead>
-                <tbody id="order-table">
-                    <!-- Order data will populate here -->
-                </tbody>
-            </table>
-        </div>
 
+    <div style="margin-top:190px;padding:15px 15px;font-size:30px">
+
+		<center>
+		<?php
+		$sql = "SELECT id, username, email, level FROM users";
+		$result = $dbconn->query($sql);
+		?>
+
+
+		<table class="tuser" border="1px solid black">
+			<caption><h2 style="color: white" align="center">Admin's View</h2></caption>
+		<tr>
+		<th>ID</th>
+		<th>Username</th>
+		<th>Email</th>
+		<th>Level</th>
+		<th>Delete User</th>
+		</tr>
+
+		<?php
+		while($row = mysqli_fetch_array($result))
+		{
+		?>
+		 <tr>
+		 <td><?php echo $row['id']; ?></td>
+		 <td><?php echo $row['username']; ?></td>
+		 <td><?php echo $row['email']; ?></td>
+		 <td><?php echo $row['level']; ?></td>
+		 <td><a href="deleteuser.php?id=<?php echo $row['id']; ?>">Delete</a>
+		 </tr>
+		 <?php
+		}
+		?>
+		</table>
+		</center>
+	</div>
+
+	<style>
+		table{
+			background-color: white;
+  			box-shadow: 5px 10px #888888;
+			width: 80%;
+		}
+	</style>
 </body>
 
 </html>

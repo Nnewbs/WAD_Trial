@@ -54,12 +54,12 @@ session_start();
 <body>
     <div class="sidebar">
         <h3 class="text-center">Admin Panel</h3>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#menu-management">Menu Management</a>
-        <a href="#order-management">Order Management</a>
-        <a href="#transaction-summary">Transaction Summary</a>
-        <a href="#registered-members">Registered Members</a>
-        <a href="index.php">Logout</a>
+        <a href="adminHome.php">Dashboard</a>
+        <a href="adminMenuMan.php">Menu Management</a>
+        <a href="adminOrderMan.php">Order Management</a>
+        <a href="adminSummary.php">Transaction Summary</a>
+        <a href="adminMemView.php">Registered Members</a>
+        <a href="logout.php">Logout</a>
     </div>
 
     <div class="content">
@@ -101,7 +101,8 @@ session_start();
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Chart.js example
+        // Chart.js 
+
         const ctx = document.getElementById('salesChart').getContext('2d');
         const salesChart = new Chart(ctx, {
             type: 'line',
