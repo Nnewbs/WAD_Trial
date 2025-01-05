@@ -1,5 +1,6 @@
 <?php
 	include("dbconn.php");
+	session_start();
 
 	if(isset($_POST['email'])){
 		//find email and password from database
@@ -14,6 +15,8 @@
 			$_SESSION['email'] = $row['email'];
 			$_SESSION['level'] = $row['level'];
 			$_SESSION['password'] = $row['password'];
+			$_SESSION['id'] = $row['id'];
+			$id = $_SESSION['id'];
 
 			//Check the level whether it is a customer or an admin.
 			if($row['level'] == "customer"){
