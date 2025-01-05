@@ -70,7 +70,7 @@
     <div class="sidebar">
         <a href="#" id="personal-info-tab">Personal Information</a>
         <a href="#" id="order-history-tab">Order History</a>
-        <a href="index.php">Logout</a>
+        <a href="logout.php">Logout</a>
     </div>
 
     <!-- Main Content -->

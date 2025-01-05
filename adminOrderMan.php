@@ -59,7 +59,7 @@ session_start();
         <a href="adminOrderMan.php">Order Management</a>
         <a href="adminSummary.php">Transaction Summary</a>
         <a href="adminMemView.php">Registered Members</a>
-        <a href="index.php">Logout</a>
+        <a href="logout.php">Logout</a>
     </div>
 
     <div class="content">
