@@ -108,17 +108,17 @@ $(function(){
     <h3 class="text-center">Meet Our Team</h3>
     <div class="row justify-content-center">
         <div class="col-md-3 team-member">
-            <img src="images/ft1.jpg" alt="Team Member">
+            <img src="images/ft1.png" alt="Team Member">
             <h5>Emmy</h5>
             <p>Full Time</p>
         </div>
         <div class="col-md-3 team-member">
-            <img src="images/ft2.jpg" alt="Team Member">
+            <img src="images/ft2.png" alt="Team Member">
             <h5>Nor</h5>
             <p>Full Time</p>
         </div>
         <div class="col-md-3 team-member">
-            <img src="images/ft3.jpg" alt="Team Member">
+            <img src="images/ft3.png" alt="Team Member">
             <h5>Myra</h5>
             <p>Full Time</p>
         </div>
