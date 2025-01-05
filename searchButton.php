@@ -1,32 +1,32 @@
 <?php
     include("dbconn.php");
 
-    if($_POST['search'] == "chips" || $_POST['search'] == "chipsmore" || $_POST['search'] == "Fit Shirt" || $_POST['search'] == "slim fit shirt" || $_POST['search'] == "SLIM FIT SHIRT" || $_POST['search'] == "man shirt" || $_POST['search'] == "MAN SHIRT"){
-        echo "<script> window.location='tie.php?id=".$id."'</script>";
+    if($_POST['search'] == "chips" || $_POST['search'] == "chipsmore" || $_POST['search'] == "CHIPSMORE" || $_POST['search'] == "chip" || $_POST['search'] == "Chipsmore" || $_POST['search'] == "Chocolate Cookies" || $_POST['search'] == "Cookies"){
+        echo "<script> window.location='chipsmore.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "hoodie man" || $_POST['search'] == "regular hoodie" || $_POST['search'] == "regular fit hoodie" || $_POST['search'] == "Regular Fit Hoodie" || $_POST['search'] == "REGULAR FIT HOODIE"){
-        echo "<script> window.location='man2.php?id=".$id."'</script>";
+    else if($_POST['search'] == "pepsi" || $_POST['search'] == "pep" || $_POST['search'] == "Pepsi" || $_POST['search'] == "PEPSI" || $_POST['search'] == "peps"){
+        echo "<script> window.location='pepsi.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "knit man" || $_POST['search'] == "knit pullover" || $_POST['search'] == "KNIT PULLOVER" || $_POST['search'] == "KNIT MAN"){
-        echo "<script> window.location='man3.php?id=".$id."'</script>";
+    else if($_POST['search'] == "cola" || $_POST['search'] == "Cola" || $_POST['search'] == "coca cola" || $_POST['search'] == "COLA"){
+        echo "<script> window.location='cola.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "women top" || $_POST['search'] == "bishop top" || $_POST['search'] == "BISHOP TOP" || $_POST['search'] == "bishoptop" || $_POST['search'] == "BISHOPTOP"){
-        echo "<script> window.location='women1.php?id=".$id."'</script>";
+    else if($_POST['search'] == "Heaven" || $_POST['search'] == "Heaven & Earth" || $_POST['search'] == "Heav" || $_POST['search'] == "Green Tea" || $_POST['search'] == "HEAVEN & EARTH"){
+        echo "<script> window.location='heaven2.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "women dress" || $_POST['search'] == "womendress" || $_POST['search'] == "WOMEN DRESS" || $_POST['search'] == "WOMENDRESS" || $_POST['search'] == "checkered dress" || $_POST['search'] == "CHECKERED DRESS" || $_POST['search'] == "checkereddress" || $_POST['search'] == "CHECKEREDDRESS"){
-        echo "<script> window.location='women2.php?id=".$id."'</script>";
+    else if($_POST['search'] == "mee sedap" || $_POST['search'] == "MEE SEDAP" || $_POST['search'] == "MEE" || $_POST['search'] == "Instant Noodles" || $_POST['search'] == "Instant" || $_POST['search'] == "INSTANT NOODLES" || $_POST['search'] == "Mee sedap" || $_POST['search'] == "MEE"){
+        echo "<script> window.location='meesedap.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "shirt women" || $_POST['search'] == "SHIRT WOMEN" || $_POST['search'] == "shirtwomen" || $_POST['search'] == "SHIRTWOMEN" || $_POST['search'] == "Printed T-shirt" || $_POST['search'] == "PRINTED T-SHIRT" || $_POST['search'] == "printedtshirt" || $_POST['search'] == "PRINTEDTSHIRT"){
-        echo "<script> window.location='women3.php?id=".$id."'</script>";
+    else if($_POST['search'] == "mister" || $_POST['search'] == "misterpotato" || $_POST['search'] == "MISTER POTATO" || $_POST['search'] == "SNACK" || $_POST['search'] == "snack" || $_POST['search'] == "junk food" || $_POST['search'] == "potato snack" || $_POST['search'] == "POTATO SNACK"){
+        echo "<script> window.location='mister.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "bucket hat" || $_POST['search'] == "BUCKET HAT" || $_POST['search'] == "buckethat" || $_POST['search'] == "BUCKETHAT" || $_POST['search'] == "tie-detail sun hat" || $_POST['search'] == "TIE-DETAIL SUN HAT" || $_POST['search'] == "tie detail sunhat" || $_POST['search'] == "TIE DETAIL SUNHAT" || $_POST['search'] == "tie detail sun hat" || $_POST['search'] == "TIE DETAIL SUN HAT"){
-        echo "<script> window.location='acc1.php?id=".$id."'</script>";
+    else if($_POST['search'] == "MUNCHYS" || $_POST['search'] == "munchys" || $_POST['search'] == "biscuits" || $_POST['search'] == "BISCUITS" || $_POST['search'] == "cracker" || $_POST['search'] == "CRACKER" || $_POST['search'] == "Butter Cracker" || $_POST['search'] == "BUTTER CRACKER" || $_POST['search'] == "butter biscuit" || $_POST['search'] == "BUTTER BISCUIT"){
+        echo "<script> window.location='munchys.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "beanie" || $_POST['search'] == "BEANIE" || $_POST['search'] == "rib-knit hat" || $_POST['search'] == "RIB-KNIT HAT" || $_POST['search'] == "rib knit hat" || $_POST['search'] == "RIB KNIT HAT" || $_POST['search'] == "ribknit hat" || $_POST['search'] == "RIBKNIT HAT"){
-        echo "<script> window.location='acc2.php?id=".$id."'</script>";
+    else if($_POST['search'] == "ODEN" || $_POST['search'] == "Oden" || $_POST['search'] == "tom yum" || $_POST['search'] == "TOM YUM" || $_POST['search'] == "soup" || $_POST['search'] == "SOUP" || $_POST['search'] == "HOT FOOD" || $_POST['search'] == "Spicy"){
+        echo "<script> window.location='oden.php?id=".$id."'</script>";
     }
-    else if($_POST['search'] == "beanie" || $_POST['search'] == "BEANIE" || $_POST['search'] == "rib-knit hat" || $_POST['search'] == "RIB-KNIT HAT" || $_POST['search'] == "rib knit hat" || $_POST['search'] == "RIB KNIT HAT" || $_POST['search'] == "ribknit hat" || $_POST['search'] == "RIBKNIT HAT"){
-        echo "<script> window.location='acc2.php?id=".$id."'</script>";
+    else if($_POST['search'] == "waffle" || $_POST['search'] == "WAFFLE" || $_POST['search'] == "butter waffle" || $_POST['search'] == "peanut waffle" || $_POST['search'] == "chocolate waffle" || $_POST['search'] == "hot waffle" || $_POST['search'] == "HOT WAFFLE" || $_POST['search'] == ""){
+        echo "<script> window.location='waffle.php?id=".$id."'</script>";
     }
     else {
         echo "<script>alert('The item not available in our store at the moment!'); window.location='shopPage.php';</script>";
