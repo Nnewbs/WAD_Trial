@@ -1,5 +1,6 @@
 <?php
     include("dbconn.php"); //$conn
+    session_start();
 ?>
 
 <?php
@@ -34,6 +35,7 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
     text-align: center;
+    background-color: white
     }
 
     .home-content p {
@@ -113,17 +115,17 @@ $(function(){
 <!--end of Navigation bar-->
 
 <div class="home">
-    <div class="home-content">
       <h1>SHOP</h1>
       <p>Affordable essentials and fresh finds, just for students. Shop smart, live easy!</p>
     </div>
-    <div class="form-container">
+
+  <div class="form-container">
       <form class="box" method="post" action="searchButton.php">
         <input type="text" name="search" placeholder="Search..">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
-  </div>
+  
 
   <div class="container">
     <div class="row">
@@ -135,6 +137,8 @@ $(function(){
             while($row = mysqli_fetch_assoc($result)) {
             // echo $row['id'] ." ". $row['name'] ." ". $row['image'] ." ". $row['price']."<br>";
           ?>
+
+
 
 
           <div class="col-md-3 text-center mt-5">
