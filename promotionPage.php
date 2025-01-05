@@ -46,7 +46,7 @@ $(function(){
 <div class="home">
   <img src="images/homepage.jpeg" alt="Homepage">
   <div class="home-content">
-    <h1>PROMOTION</h1>
+    <h1>Promotion</h1>
     <p>Enjoy exclusive monthly and seasonal promotions with special discounts and limited-time deals. Check back often for fresh offers!</p>
     <button onclick="location.href='Shop.php'">MONTHLY PROMOTION</button>
     <button onclick="location.href='aboutUs.php'">SEASONAL PROMOTION</button>
@@ -113,7 +113,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button onclick="location.href='muchys.php'">Munchys</button>
+            <button onclick="location.href='munchys.php'">Munchys</button>
           </div>
         </article>
 

@@ -12,13 +12,16 @@
 <!doctype html>
 <html>
    <head>
-	   <title>Cola</title>
-	   <meta charset="utf-8">
-	   <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <link rel="stylesheet" href="CSS/style.css?v=<?php echo time(); ?>">
-	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	   <script type="text/javascript" src="JS/script.js"></script>
+        <title>Coca Cola</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css?v=<?php echo time(); ?>">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 		<!-- Icon -->
 		<link rel="shortcut icon" href="images/icon.jpg" type="image/jpg">
@@ -73,7 +76,7 @@ $(function(){
         <td style="width: 50%; vertical-align: top; padding: 20px;">
             <form>
             <span style="font-size: 18px; color: gray;">Drink / Soda</span>
-            <h1 style="font-size: 28px; margin: 10px 0;">Cola</h1>
+            <h1 style="font-size: 28px; margin: 10px 0;">Coca Cola</h1>
             <p style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #444;">RM5.00</p>
             <br>
             <h3 style="font-size: 22px; margin-bottom: 10px;">Ingredients Details</h3>
