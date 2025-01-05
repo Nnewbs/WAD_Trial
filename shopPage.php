@@ -29,7 +29,7 @@
     
     <style>
     .home-content h1 {
-    margin-top: 10%;
+    margin-top: 30%;
     font-size: 50px;
     color: white;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
@@ -44,6 +44,7 @@
   }
 
   .form-container {
+      margin-top: 1%;
       display: flex;
       justify-content: center;
     }
@@ -308,42 +309,6 @@ function deleteINsession(){
     })
     </script>
 
-    <!--Footer -->
-<footer class="footer">
-    <div class="container-footer">
-       <div class="row">
-           <div class="footer-col">
-               <h4>Company</h4>
-               <ul>
-                   <li><a href="aboutUs.php">about us</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Get Help</h4>
-               <ul>
-                   <li><a href="#">FAQ</a></li>
-                   <li><a href="#">returns</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Shop</h4>
-               <ul>
-                   <li><a href="promotionPage.php">Promotion</a></li>
-                   <li><a href="shopPage.php">Shop</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>follow us</h4>
-               <div class="social-links">
-                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-               </div>
-           </div>
-       </div>
-    </div>
- </footer>
- <!--End Footer-->
 
 </body>
 
