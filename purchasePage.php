@@ -3,6 +3,7 @@
 ?>
 <?php
     $id = $_GET['id'];
+
     $sql = "SELECT * FROM users WHERE email = '$id'";
     $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
     $row = $query -> fetch_assoc();
@@ -41,4 +42,9 @@
   <h3 style="color: #ffff;">Thank you for purchasing!</h3>
 </div>
 </body>
+
+<script>
+
+</script>
+
 </html>

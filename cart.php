@@ -74,6 +74,7 @@ if(!empty($_SESSION['cart'])){
     }
     $outputTable .= "</table>";
     $outputTable .= "<div class='text-center'><b>Total: ".$total."</b></div>";
+    
 }
 
 echo json_encode($outputTable);
