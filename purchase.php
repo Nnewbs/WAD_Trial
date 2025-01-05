@@ -1,6 +1,15 @@
 <?php
 session_start();
 require_once 'dbconn.php'; // Ensure database connection
+?>
+
+<?php
+    $id = $_GET['id'];
+
+    $sql = "SELECT * FROM users WHERE email = '$id'";
+    $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
+    $row = $query -> fetch_assoc();
+?>
 
 if (isset($_POST['purchase'])) {
     // Ensure the user is logged in
