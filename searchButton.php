@@ -1,7 +1,7 @@
 <?php
     include("dbconn.php");
 
-    if($_POST['search'] == "tie" || $_POST['search'] == "slim man" || $_POST['search'] == "Fit Shirt" || $_POST['search'] == "slim fit shirt" || $_POST['search'] == "SLIM FIT SHIRT" || $_POST['search'] == "man shirt" || $_POST['search'] == "MAN SHIRT"){
+    if($_POST['search'] == "chips" || $_POST['search'] == "chipsmore" || $_POST['search'] == "Fit Shirt" || $_POST['search'] == "slim fit shirt" || $_POST['search'] == "SLIM FIT SHIRT" || $_POST['search'] == "man shirt" || $_POST['search'] == "MAN SHIRT"){
         echo "<script> window.location='tie.php?id=".$id."'</script>";
     }
     else if($_POST['search'] == "hoodie man" || $_POST['search'] == "regular hoodie" || $_POST['search'] == "regular fit hoodie" || $_POST['search'] == "Regular Fit Hoodie" || $_POST['search'] == "REGULAR FIT HOODIE"){
@@ -21,6 +21,9 @@
     }
     else if($_POST['search'] == "bucket hat" || $_POST['search'] == "BUCKET HAT" || $_POST['search'] == "buckethat" || $_POST['search'] == "BUCKETHAT" || $_POST['search'] == "tie-detail sun hat" || $_POST['search'] == "TIE-DETAIL SUN HAT" || $_POST['search'] == "tie detail sunhat" || $_POST['search'] == "TIE DETAIL SUNHAT" || $_POST['search'] == "tie detail sun hat" || $_POST['search'] == "TIE DETAIL SUN HAT"){
         echo "<script> window.location='acc1.php?id=".$id."'</script>";
+    }
+    else if($_POST['search'] == "beanie" || $_POST['search'] == "BEANIE" || $_POST['search'] == "rib-knit hat" || $_POST['search'] == "RIB-KNIT HAT" || $_POST['search'] == "rib knit hat" || $_POST['search'] == "RIB KNIT HAT" || $_POST['search'] == "ribknit hat" || $_POST['search'] == "RIBKNIT HAT"){
+        echo "<script> window.location='acc2.php?id=".$id."'</script>";
     }
     else if($_POST['search'] == "beanie" || $_POST['search'] == "BEANIE" || $_POST['search'] == "rib-knit hat" || $_POST['search'] == "RIB-KNIT HAT" || $_POST['search'] == "rib knit hat" || $_POST['search'] == "RIB KNIT HAT" || $_POST['search'] == "ribknit hat" || $_POST['search'] == "RIBKNIT HAT"){
         echo "<script> window.location='acc2.php?id=".$id."'</script>";

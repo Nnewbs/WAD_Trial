@@ -196,6 +196,43 @@
       </main>
   </div>
 
+<!--Footer -->
+<footer class="footer">
+    <div class="container-footer">
+       <div class="row">
+           <div class="footer-col">
+               <h4>Company</h4>
+               <ul>
+                   <li><a href="aboutUs.php">about us</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Get Help</h4>
+               <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">returns</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Shop</h4>
+               <ul>
+                   <li><a href="promotionPage.php">Promotion</a></li>
+                   <li><a href="shopPage.php">Shop</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+       </div>
+    </div>
+ </footer>
+ <!--End Footer-->
+
 <!-- Script Section -->
 <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
