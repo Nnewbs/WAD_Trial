@@ -9,89 +9,27 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <script type="text/javascript" src="JS/script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <style>
 	.grid > article{
 		width: 350px;
 	}
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-  }
-
-  .home {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  .home img {
-    width: 100%;
-    max-height: 700px;
-    object-fit: cover;
-  }
-
-  .home-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .home-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-
-  .home-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .home-content button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #000000;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
-  }
-
-  .home-content button:hover {
-    background-color: #000000;
-  }
 </style>
 </head>
 <body>
 
-<!-- Nav bar --> 
-<div id="navbar" style="padding: 35px 10px;">
-    <a href="index.php" id="logo">PAVI MART</a>
-    <div id="navbar-middle">
-        <a href="index.php">Home</a>
-        <a href="shopPage.php">Shop</a>
-        <a href="promotionPage.php">Promotion</a>
-        <a href="about.php">About Us</a>
-    </div>
+<!--Top Navigation Bar-->
+<div id="navbar-frame">
 
-    <div id="navbar-right">
-        <a href="loginPage.php">Login</a>
-    </div>
 </div>
-<!-- End Nav bar-->
+
+<script>
+$(function(){
+  $("#navbar-frame").load("navbar1.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 <!-- Home Section -->
 <div class="home">

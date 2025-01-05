@@ -22,8 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <script type="text/javascript" src="JS/script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
     <style>
     .home-content h1 {
     margin-top: 10%;
@@ -96,22 +98,17 @@
 
 <body>
 
-<!-- Nav bar --> 
-<div id="navbar" style="padding: 35px 10px;">
-    <a href="homePage.php" id="logo">PAVI MART</a>
-    <div id="navbar-middle">
-        <a href="homePage.php">Home</a>
-        <a href="shopPage.php">Shop</a>
-        <a href="promotionPage.php">Promotion</a>
-        <a href="about.php">About Us</a>
-    </div>
+<!--Top Navigation Bar-->
+<div id="navbar-frame">
 
-    <div id="navbar-right">
-        <a href="shopPage.php">Cart</a>
-        <a href="account.php">Account</a>
-    </div>
 </div>
-<!-- End Nav bar-->
+
+<script>
+$(function(){
+  $("#navbar-frame").load("navbar2.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 <div class="home">
     <div class="home-content">
@@ -273,6 +270,43 @@ function deleteINsession(){
         })
     })
     </script>
+
+    <!--Footer -->
+<footer class="footer">
+    <div class="container-footer">
+       <div class="row">
+           <div class="footer-col">
+               <h4>Company</h4>
+               <ul>
+                   <li><a href="aboutUs.php">about us</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Get Help</h4>
+               <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">returns</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Shop</h4>
+               <ul>
+                   <li><a href="promotionPage.php">Promotion</a></li>
+                   <li><a href="shopPage.php">Shop</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+       </div>
+    </div>
+ </footer>
+ <!--End Footer-->
 
 </body>
 

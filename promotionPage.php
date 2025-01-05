@@ -19,91 +19,27 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <script type="text/javascript" src="JS/script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <style>
 	.grid > article{
 		width: 350px;
 	}
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-
-  .home {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  .home img {
-    width: 100%;
-    max-height: 700px;
-    object-fit: cover;
-  }
-
-  .home-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .home-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-
-  .home-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-
-  .home-content button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #000000;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
-  }
-
-  .home-content button:hover {
-    background-color: #000000;
-  }
 </style>
 </head>
 <body>
 
-<!-- Nav bar --> 
-<div id="navbar" style="padding: 35px 10px;">
-    <a href="homePage.php" id="logo">PAVI MART</a>
-    <div id="navbar-middle">
-        <a href="homePage.php">Home</a>
-        <a href="shopPage.php">Shop</a>
-        <a href="promotionPage.php">Promotion</a>
-        <a href="about.php">About Us</a>
-    </div>
+<!--Top Navigation Bar-->
+<div id="navbar-frame">
 
-    <div id="navbar-right">
-        <a href="shopPage.php">Cart</a>
-        <a href="account.php">Account</a>
-    </div>
 </div>
-<!-- End Nav bar-->
+
+<script>
+$(function(){
+  $("#navbar-frame").load("navbar2.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 <!-- Home Section -->
 <div class="home">
@@ -126,71 +62,87 @@
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Chipsmore</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="cola.php">
+        <img height="500px"src="images/cola.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Cola</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="heaven2.php">
+        <img height="500px"src="images/h&e2.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Heaven & Earth</button>
           </div>
         </article>
 
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <a href="meesedap.php">
+        <img height="500px"src="images/meesedap.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Mee Sedap</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="mister.php">
+        <img height="500px"src="images/mister.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Mister Potato</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="munchys.php">
+        <img height="500px"src="images/munchys.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Munchys</button>
           </div>
         </article>
 
         <article>
-        <img height="500px"src="images/men1.jpg" alt="" width="100%">
+        <a href="oden.php">
+        <img height="500px"src="images/oden.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button href="">Oden</button>
           </div>
         </article>
   
         <article>
-        <img height="500px"src="images/women1.jpg" alt="" width="100%">
+        <a href="pepsi.php">
+        <img height="500px"src="images/pepsi.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button href="">Pepsi</button>
           </div>
         </article>
   
         <article>
-          <img height="500px"src="images/acc1.jpg" alt="" width="100%">
+        <a href="Waffle.php">
+        <img height="500px"src="images/waffle.jpg" alt="" width="100%">
+        </a>
           <div class="texts">
             <h3></h3>
-            <button>Bake Goods</button>
+            <button href="">Waffle</button>
           </div>
         </article>
       </main>
@@ -211,5 +163,42 @@
       }
     }
 </script>
+
+    <!--Footer -->
+    <footer class="footer">
+    <div class="container-footer">
+       <div class="row">
+           <div class="footer-col">
+               <h4>Company</h4>
+               <ul>
+                   <li><a href="aboutUs.php">about us</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Get Help</h4>
+               <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">returns</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Shop</h4>
+               <ul>
+                   <li><a href="promotionPage.php">Promotion</a></li>
+                   <li><a href="shopPage.php">Shop</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+       </div>
+    </div>
+ </footer>
+ <!--End Footer-->
 </body>
 </html>
