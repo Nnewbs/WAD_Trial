@@ -63,7 +63,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Chipsmore</button>
+            <button onclick="location.href='chipsmore.php'">Chipsmore</button>
           </div>
         </article>
   
@@ -73,7 +73,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Cola</button>
+            <button onclick="location.href='cola.php'">Cola</button>
           </div>
         </article>
   
@@ -83,7 +83,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Heaven & Earth</button>
+            <button onclick="location.href='heaven2.php'">Heaven & Earth</button>
           </div>
         </article>
 
@@ -93,7 +93,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Mee Sedap</button>
+            <button onclick="location.href='meesedap.php'">Mee Sedap</button>
           </div>
         </article>
   
@@ -103,7 +103,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Mister Potato</button>
+            <button onclick="location.href='mister.php'">Mister Potato</button>
           </div>
         </article>
   
@@ -113,7 +113,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Munchys</button>
+            <button onclick="location.href='muchys.php'">Munchys</button>
           </div>
         </article>
 
@@ -123,7 +123,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Oden</button>
+            <button onclick="location.href='oden.php'">Oden</button>
           </div>
         </article>
   
@@ -133,7 +133,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Pepsi</button>
+            <button onclick="location.href='pepsi.php'">Pepsi</button>
           </div>
         </article>
   
@@ -143,7 +143,7 @@ $(function(){
         </a>
           <div class="texts">
             <h3></h3>
-            <button href="">Waffle</button>
+            <button onclick="location.href='waffle.php'">Waffle</button>
           </div>
         </article>
       </main>

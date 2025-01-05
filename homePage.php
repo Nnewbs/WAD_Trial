@@ -64,7 +64,7 @@ $(function(){
         <img height="500px"src="images/mister.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
-            <button href="">Snack</button>
+            <button onclick="location.href='shopPage.php'">Snack</button>
           </div>
         </article>
   
@@ -72,7 +72,7 @@ $(function(){
         <img height="500px"src="images/waffle.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
-            <button href="product.php">Fresh Food</button>
+            <button onclick="location.href='shopPage.php'">Fresh Food</button>
           </div>
         </article>
   
@@ -80,7 +80,7 @@ $(function(){
           <img height="500px"src="images/cola.jpg" alt="" width="100%">
           <div class="texts">
             <h3></h3>
-            <button>Drinks</button>
+            <button onclick="location.href='shopPage.php'">Drinks</button>
           </div>
         </article>
       </main>
@@ -95,7 +95,7 @@ $(function(){
       <img height="500px"src="images/oden.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button href="">Oden Combo Set</button>
+          <button onclick="location.href='promotionPage.php'">Oden Combo Set</button>
         </div>
       </article>
 
@@ -103,7 +103,7 @@ $(function(){
       <img height="500px"src="images/chipsmore.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button href="product.php">Breakfast Pack</button>
+          <button onclick="location.href='promotionPage.php'">Breakfast Pack</button>
         </div>
       </article>
 
@@ -111,7 +111,7 @@ $(function(){
         <img height="500px"src="images/mister.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button>Snack Bundle Deals</button>
+          <button onclick="location.href='promotionPage.php'">Snack Bundle Deals</button>
         </div>
       </article>
     </main>
@@ -126,7 +126,7 @@ $(function(){
       <img height="500px"src="images/oden.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button href="">Oden's Cup</button>
+          <button onclick="location.href='shopPage.php'">Oden's Cup</button>
         </div>
       </article>
 
@@ -134,7 +134,7 @@ $(function(){
       <img height="500px"src="images/pepsi.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button href="product.php">Pepsi</button>
+          <button onclick="location.href='shopPage.php'">Pepsi</button>
         </div>
       </article>
 
@@ -142,7 +142,7 @@ $(function(){
         <img height="500px"src="images/meesedap.jpg" alt="" width="100%">
         <div class="texts">
           <h3></h3>
-          <button>Mee Sedap Original Cup 70g</button>
+          <button onclick="location.href='shopPage.php'">Mee Sedap Original Cup 70g</button>
         </div>
       </article>
     </main>

@@ -27,6 +27,15 @@
             color: white;
             padding: 100px 0;
             text-align: center;
+            
+        }
+
+        .about-section h1 {
+            color:black; 
+        }
+
+        .about-section p {
+            color:black; 
         }
 
         .team-section {
@@ -90,7 +99,7 @@ $(function(){
 
 <!-- About Section -->
 <div class="about-section">
-    <h1>About PAVI MART</h1>
+    <h1>About</h1>
     <p>Your one-stop shop for affordable essentials and fresh finds. Simplifying life for students.</p>
 </div>
 
@@ -99,7 +108,7 @@ $(function(){
     <h3 class="text-center">Meet Our Team</h3>
     <div class="row justify-content-center">
         <div class="col-md-3 team-member">
-            <img src="images/f1.jpg" alt="Team Member">
+            <img src="images/ft1.jpg" alt="Team Member">
             <h5>Emmy</h5>
             <p>Full Time</p>
         </div>
