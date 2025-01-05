@@ -47,7 +47,7 @@
         <a href="index.php">Home</a>
         <a href="shopPage.php">Shop</a>
         <a href="promotionPage.php">Promotion</a>
-        <a href="about.php">About Us</a>
+        <a href="aboutUs.php">About Us</a>
     </div>
 </div>
 <!-- End Nav bar-->
