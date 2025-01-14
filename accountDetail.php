@@ -1,12 +1,38 @@
 <?php
-    include("dbconn.php"); //$conn
-?>
-<?php
-    $id = $_SESSION['id'];
+// Include database connection
+include("dbconn.php");
+session_start();
 
-    $sql = "SELECT * FROM users WHERE email = '$id'";
-    $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
-    $row = $query -> fetch_assoc();
+// Check if the user is logged in
+if (!isset($_SESSION['id'])) {
+    header("Location: login.php"); // Redirect to login page if not logged in
+    exit();
+}
+
+// Get the logged-in user's ID from the session
+$id = $_SESSION['id'];
+
+// Handle the form submission (when the Save button is clicked)
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get the updated values from the form
+    $firstName = mysqli_real_escape_string($dbconn, $_POST['username']);
+    $email = mysqli_real_escape_string($dbconn, $_POST['email']);
+
+    // Update the database with the new values
+    $updateQuery = "UPDATE users SET username = '$firstName', email = '$email' WHERE id = '$id'";
+    if (mysqli_query($dbconn, $updateQuery)) {
+        // If update is successful, reload the page
+        header("Location: accountDetail.php");
+        exit();
+    } else {
+        echo "Error updating record: " . mysqli_error($dbconn);
+    }
+}
+
+// Fetch user details from the database
+$sql = "SELECT * FROM users WHERE id = '$id'";
+$query = mysqli_query($dbconn, $sql);
+$row = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html>
@@ -81,29 +107,24 @@
             <div id="view-info">
                 <h3>Personal Information</h3>
                 <img src="default-profile.jpg" alt="Profile Image" class="profile-img mb-3">
-                <p><strong>First Name:</strong> <span id="view-first-name">John Doe</span></p>
-                <p><strong>Email:</strong> <span id="view-email">johndoe@example.com</span></p>
-                <p><strong>Address:</strong> <span id="view-address">123 Main St, City, Country</span></p>
+                <p><strong>First Name:</strong> <span id="view-first-name"><?php echo $row['username']; ?></span></p>
+                <p><strong>Email:</strong> <span id="view-email"><?php echo $row['email']; ?></span></p>
                 <button class="btn btn-primary" id="edit-info-btn">Edit</button>
             </div>
 
             <!-- Edit Information -->
             <div id="edit-info" class="form-container">
                 <h3>Edit Personal Information</h3>
-                <form id="edit-info-form">
+                <form id="edit-info-form" method="POST" action="accountDetail.php">
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" class="form-control" value="John Doe">
+                        <input type="text" id="first-name" class="form-control" name="username" value="<?php echo $row['username']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" value="johndoe@example.com">
+                        <input type="email" id="email" class="form-control" name="email" value="<?php echo $row['email']; ?>">
                     </div>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <textarea id="address" class="form-control">123 Main St, City, Country</textarea>
-                    </div>
-                    <button type="button" class="btn btn-success" id="save-info-btn">Save</button>
+                    <button type="submit" class="btn btn-success">Save</button>
                     <button type="button" class="btn btn-secondary" id="cancel-info-btn">Cancel</button>
                 </form>
             </div>
@@ -162,22 +183,6 @@
                 $("#edit-info").show();
             });
 
-            // Save Personal Information
-            $("#save-info-btn").click(function () {
-                let firstName = $("#first-name").val();
-                let email = $("#email").val();
-                let address = $("#address").val();
-
-                // Update view fields
-                $("#view-first-name").text(firstName);
-                $("#view-email").text(email);
-                $("#view-address").text(address);
-
-                // Switch back to view mode
-                $("#edit-info").hide();
-                $("#view-info").show();
-            });
-
             // Cancel Edit
             $("#cancel-info-btn").click(function () {
                 $("#edit-info").hide();
@@ -188,4 +193,6 @@
 </body>
 
 </html>
+
+
 
