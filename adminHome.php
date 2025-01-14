@@ -57,7 +57,6 @@ session_start();
         <a href="adminHome.php">Dashboard</a>
         <a href="adminMenuMan.php">Menu Management</a>
         <a href="adminOrderMan.php">Order Management</a>
-        <a href="adminSummary.php">Transaction Summary</a>
         <a href="adminMemView.php">Registered Members</a>
         <a href="logout.php">Logout</a>
     </div>
@@ -87,7 +86,18 @@ session_start();
                     <div class="card bg-warning text-white">
                         <div class="card-body">
                             <h5>User Registrations</h5>
-                            <h3 id="user-registrations">0</h3>
+                            <h3 id="user-registrations">
+                                <?php
+                                // Query to count registered users
+                                $sql = "SELECT COUNT(*) AS total_users FROM users";
+                                $result = $dbconn->query($sql);
+                                if ($result && $row = $result->fetch_assoc()) {
+                                    echo $row['total_users']; // Display total number of users
+                                } else {
+                                    echo "0"; // Default value if query fails
+                                }
+                                ?>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -99,29 +109,28 @@ session_start();
             </div>
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // Chart.js 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // Chart.js 
+            const ctx = document.getElementById('salesChart').getContext('2d');
+            const salesChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['January', 'February', 'March', 'April'],
+                    datasets: [{
+                        label: 'Sales Value',
+                        data: [1200, 1900, 3000, 5000],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                    }],
+                },
+            });
 
-        const ctx = document.getElementById('salesChart').getContext('2d');
-        const salesChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['January', 'February', 'March', 'April'],
-                datasets: [{
-                    label: 'Sales Value',
-                    data: [1200, 1900, 3000, 5000],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                }],
-            },
-        });
-
-        // Populate data dynamically (mock example for now)
-        document.getElementById('total-orders').innerText = 150;
-        document.getElementById('total-revenue').innerText = '$4500';
-        document.getElementById('user-registrations').innerText = 25;
-    </script>
+            // Populate data dynamically (mock example for now)
+            document.getElementById('total-orders').innerText = 150;
+            document.getElementById('total-revenue').innerText = '$4500';
+        </script>
+    </div>
 </body>
 
 </html>

@@ -57,7 +57,6 @@ session_start();
         <a href="adminHome.php">Dashboard</a>
         <a href="adminMenuMan.php">Menu Management</a>
         <a href="adminOrderMan.php">Order Management</a>
-        <a href="adminSummary.php">Transaction Summary</a>
         <a href="adminMemView.php">Registered Members</a>
         <a href="logout.php">Logout</a>
     </div>
