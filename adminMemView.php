@@ -91,7 +91,7 @@ session_start();
 		 <td><?php echo $row['username']; ?></td>
 		 <td><?php echo $row['email']; ?></td>
 		 <td><?php echo $row['level']; ?></td>
-		 <td><a href="deleteuser.php?id=<?php echo $row['id']; ?>">Delete</a>
+		 <td><a href="deleteUser.php?id=<?php echo $row['id']; ?>">Delete</a>
 		 </tr>
 		 <?php
 		}
