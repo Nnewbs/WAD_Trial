@@ -1,20 +1,6 @@
 <?php
     include("dbconn.php"); //$conn
     session_start();
-
-      // Check if the user is logged in
-  if (!isset($_SESSION['id'])) {
-    header("Location: loginPage.php"); // Redirect to login page if not logged in
-    exit();
-  }
-
-  // Get the logged-in user's ID from the session
-  $id = $_SESSION['id'];
-
-  // Fetch user details from the database
-  $sql = "SELECT * FROM users WHERE id = '$id'";
-  $query = mysqli_query($dbconn, $sql);
-  $row = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html>
