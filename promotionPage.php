@@ -1,13 +1,20 @@
 <?php
     include("dbconn.php"); //$conn
     session_start();
-?>
-<?php
-    $id = $_GET['id'];
 
-    $sql = "SELECT * FROM users WHERE email = '$id'";
-    $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
-    $row = $query -> fetch_assoc();
+      // Check if the user is logged in
+  if (!isset($_SESSION['id'])) {
+    header("Location: loginPage.php"); // Redirect to login page if not logged in
+    exit();
+  }
+
+  // Get the logged-in user's ID from the session
+  $id = $_SESSION['id'];
+
+  // Fetch user details from the database
+  $sql = "SELECT * FROM users WHERE id = '$id'";
+  $query = mysqli_query($dbconn, $sql);
+  $row = mysqli_fetch_assoc($query);
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +28,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <script type="text/javascript" src="JS/script.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <style>
 	.grid > article{
@@ -37,7 +47,7 @@
 
 <script>
 $(function(){
-  $("#navbar-frame").load("navbar2.html");
+  $("#navbar-frame").load("navbar1.html");
 });
 </script>
 <!--end of Navigation bar-->
@@ -48,8 +58,6 @@ $(function(){
   <div class="home-content">
     <h1>Promotion</h1>
     <p>Enjoy exclusive monthly and seasonal promotions with special discounts and limited-time deals. Check back often for fresh offers!</p>
-    <button onclick="location.href='Shop.php'">MONTHLY PROMOTION</button>
-    <button onclick="location.href='aboutUs.php'">SEASONAL PROMOTION</button>
   </div>
 </div>
   
@@ -165,41 +173,14 @@ $(function(){
     }
 </script>
 
-    <!--Footer -->
-    <footer class="footer">
-    <div class="container-footer">
-       <div class="row">
-           <div class="footer-col">
-               <h4>Company</h4>
-               <ul>
-                   <li><a href="aboutUs.php">about us</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Get Help</h4>
-               <ul>
-                   <li><a href="#">FAQ</a></li>
-                   <li><a href="#">returns</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Shop</h4>
-               <ul>
-                   <li><a href="promotionPage.php">Promotion</a></li>
-                   <li><a href="shopPage.php">Shop</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>follow us</h4>
-               <div class="social-links">
-                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-               </div>
-           </div>
-       </div>
-    </div>
- </footer>
- <!--End Footer-->
+<!--Footer-->
+<div id="footer-frame"></div>
+
+<script>
+$(function(){
+  $("#footer-frame").load("footer.html");
+});
+</script>
+<!--end of Footer-->
 </body>
 </html>
