@@ -59,7 +59,7 @@ session_start();
     <div class="sidebar">
         <h3 class="text-center">Admin Panel</h3>
         <a href="adminHome.php">Dashboard</a>
-        <a href="adminMenuMan.php">Menu Management</a>
+        <a href="adminItemMan.php">Item Management</a>
         <a href="adminOrderMan.php">Order Management</a>
         <a href="adminMemView.php">Registered Members</a>
         <a href="logout.php">Logout</a>
