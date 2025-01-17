@@ -16,6 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script type="text/javascript" src="JS/script.js"></script>
 
     <style>
         body {
@@ -92,7 +94,7 @@
 
 <script>
 $(function(){
-  $("#navbar-frame").load("navbar2.html");
+  $("#navbar-frame").load("navbar1.html");
 });
 </script>
 <!--end of Navigation bar-->
@@ -101,28 +103,9 @@ $(function(){
 <div class="about-section">
     <h1>About</h1>
     <p>Your one-stop shop for affordable essentials and fresh finds. Simplifying life for students.</p>
-</div>
+    <p><br><b>Opening Hours:</b></br>
+    Monday - Sunday: 10:00AM - 10:00PM</p>
 
-<!-- Team Section -->
-<div class="team-section container">
-    <h3 class="text-center">Meet Our Team</h3>
-    <div class="row justify-content-center">
-        <div class="col-md-3 team-member">
-            <img src="images/ft1.png" alt="Team Member">
-            <h5>Emmy</h5>
-            <p>Full Time</p>
-        </div>
-        <div class="col-md-3 team-member">
-            <img src="images/ft2.png" alt="Team Member">
-            <h5>Nor</h5>
-            <p>Full Time</p>
-        </div>
-        <div class="col-md-3 team-member">
-            <img src="images/ft3.png" alt="Team Member">
-            <h5>Myra</h5>
-            <p>Full Time</p>
-        </div>
-    </div>
 </div>
 
 <!-- Values Section -->
@@ -147,42 +130,15 @@ $(function(){
     </div>
 </div>
 
-<!--Footer -->
-<footer class="footer">
-    <div class="container-footer">
-       <div class="row">
-           <div class="footer-col">
-               <h4>Company</h4>
-               <ul>
-                   <li><a href="aboutUs.php">about us</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Get Help</h4>
-               <ul>
-                   <li><a href="#">FAQ</a></li>
-                   <li><a href="#">returns</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>Shop</h4>
-               <ul>
-                   <li><a href="promotionPage.php">Promotion</a></li>
-                   <li><a href="shopPage.php">Shop</a></li>
-               </ul>
-           </div>
-           <div class="footer-col">
-               <h4>follow us</h4>
-               <div class="social-links">
-                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                   <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                   <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-               </div>
-           </div>
-       </div>
-    </div>
- </footer>
- <!--End Footer-->
+<!--Footer-->
+<div id="footer-frame"></div>
+
+<script>
+$(function(){
+  $("#footer-frame").load("footer.html");
+});
+</script>
+<!--end of Footer-->
 
 </body>
 </html>
